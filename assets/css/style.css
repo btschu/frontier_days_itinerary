@@ -556,6 +556,7 @@ h1, h2, h3, h4, h5, h6 {
 #schedule {
   padding: 60px 0 60px 0;
 }
+
 #schedule .nav-tabs {
   text-align: center;
   margin: auto;
@@ -616,46 +617,53 @@ h1, h2, h3, h4, h5, h6 {
   transition: ease-in-out 0.2s;
 }
 #schedule .schedule-item {
-  border-bottom: 1px solid #cad4f6;
+  /* border-bottom: 1px solid #cad4f6; */
+  background-color: #fff;
+  margin-bottom: 5px;
+  border-radius: 12px;
   padding-top: 15px;
   padding-bottom: 15px;
   transition: background-color ease-in-out 0.3s;
 }
-#schedule .schedule-item:hover {
-  background-color: #f7fafa;
-}
+
 #schedule .schedule-item time {
-  padding-bottom: 5px;
-  display: inline-block;
+  color: #818181;
 }
-#schedule .schedule-item .speaker {
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  border-radius: 50%;
-  float: left;
-  margin: 0 10px 10px 0;
+.row {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
 }
-#schedule .schedule-item .speaker img {
-  height: 100%;
-  transform: translateX(-50%);
-  margin-left: 50%;
-  transition: all ease-in-out 0.3s;
+
+.row ul {
+  margin-bottom: 0;
 }
+
+.row ul li {
+  font-style: italic;
+  color: #818181;
+}
+
+#schedule .row h3 {
+  color: #fff;
+  margin-top: 5px;
+}
+
 #schedule .schedule-item h4 {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin: 5px 0;
+  color: #000;
 }
 #schedule .schedule-item h4 span {
   font-style: italic;
-  color: black;
+  color: #fff;
   font-weight: normal;
   font-size: 16px;
 }
 #schedule .schedule-item p {
   font-style: italic;
-  color: black;
+  color: #fff;
   margin-bottom: 0;
 }
 
