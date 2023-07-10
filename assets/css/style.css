@@ -12,6 +12,7 @@ body {
   background: #fff;
   color: black;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 /* strong {
